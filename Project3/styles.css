@@ -1,0 +1,216 @@
+2/* === GOOGLE FONTS === */ 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+
+/* === VARIABLE CSS === */
+:root{
+    text-rendering: optimizeLegibility;
+
+/* === COLOURS === */
+    --first-colour: #965fe6;
+    --second-colour: #eb96dd;
+    --third-colour: #96c8eb;
+    --fourth-colour: #69efc0;
+    --fifth-colour: #efb969; 
+    --sixth-colour: #ef6969;
+
+/* === FONT AND TYPOGRAPHY === */
+    --body-font: 'Oswald', 'sans-serif';
+
+
+
+/* === Z-INDEX === */ 
+    --z-fixed1: 1;
+    --z-fixed2: 10;
+    --z-index3: 100;
+
+}
+
+/* === BASE === */
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+/* === LAYOUT === */
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body{
+    font-family: var(--body-font);
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    transition: background 1s ease;   
+    overflow-x: hidden;
+ 
+}
+
+header{
+    font-size: 50px;
+    font-weight: 500;
+    position: fixed;
+    width: 100%;
+    top:0;
+    padding:1%;
+    margin: 0;
+}
+
+section{
+    margin: 5%;
+}
+
+.purple{
+    background-color:#965fe6
+
+} 
+
+.pink{
+    background-color: #eb96dd;
+
+} 
+
+.lightBlue{
+    background-color: #96c8eb;
+} 
+
+.lightGreen{
+    background-color: #69efc0;
+
+} 
+
+.orange{
+    background-color:#efb969;
+
+}
+
+
+.red{
+    background-color: #ef6969;
+
+}
+
+/* === HOME === */
+ul{
+    position: fixed;
+    padding: 1%;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+#books{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+
+    
+
+}
+
+.child{
+    scroll-snap-align: center;
+    scroll-snap-stop:always;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+img{
+    box-shadow: 0 10px 30px rgb(0 0 0 / 0.2);
+}
+
+
+.text a{
+   text-decoration: none;
+}
+
+.text a:hover{
+    text-decoration: underline;
+ }
+
+#book{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+    
+}
+
+
+
+#book a, p, h4{
+    display:flex;
+    justify-content: center;
+    
+    
+}
+
+#link{
+    color: white;
+}
+
+
+
+.footer{
+    position: fixed;
+    padding: 1%;
+    bottom: 0;
+    width: 20%;
+    font-size: 17px;
+    
+    
+}
+
+
+.footer p{
+    display:block;
+    text-align: left;
+    font-size: 17px;
+}
+
+.footer a{
+    color: black;
+}
+
+.footer a:hover{
+    text-decoration: none;
+
+}
+
+#publish{
+    font-size: 12px;
+}
+
+#email{
+    position:fixed;
+    right:0;
+    top:0;
+    padding:1%;
+    margin: 0;
+    font-size: 17px;
+}
+
+
+@media screen and (max-height: 600px) {
+    
+}
+
+
